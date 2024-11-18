@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics: Class 10-12 - SkillUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkillUp</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Physics: Class 10-12</h2>
+        <div class="chapter">
+            <h3>Chapter 1: Mechanics</h3>
+            <p>Explore the fundamentals of mechanics, including motion, force, and energy.</p>
+            <button onclick="showQuiz('physics-quiz-1')">Take Quiz</button>
+        </div>
+        <!-- More chapters can be added here -->
+    </section>
+    <section id="quiz-section" class="hidden">
+        <h3>Quiz: Chapter 1</h3>
+        <div id="physics-quiz-1" class="quiz">
+            <p>1. What is the unit of force?</p>
+            <input type="radio" id="pq1a1" name="pq1" value="a"><label for="pq1a1">Newton</label><br>
+            <input type="radio" id="pq1a2" name="pq1" value="b"><label for="pq1a2">Joule</label><br>
+            <input type="radio" id="pq1a3" name="pq1" value="c"><label for="pq1a3">Watt</label><br>
+            <button onclick="submitQuiz('physics-quiz-1')">Submit</button>
+        </div>
+        <!-- More quizzes can be added here -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

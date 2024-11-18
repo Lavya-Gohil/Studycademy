@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry: Class 10-12 - SkillUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkillUp</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Chemistry: Class 10-12</h2>
+        <div class="chapter">
+            <h3>Chapter 1: Chemical Reactions</h3>
+            <p>Learn about different types of chemical reactions and their applications.</p>
+            <button onclick="showQuiz('chemistry-quiz-1')">Take Quiz</button>
+        </div>
+        <!-- More chapters can be added here -->
+    </section>
+    <section id="quiz-section" class="hidden">
+        <h3>Quiz: Chapter 1</h3>
+        <div id="chemistry-quiz-1" class="quiz">
+            <p>1. What is the product of the reaction between hydrogen and oxygen?</p>
+            <input type="radio" id="cq1a1" name="cq1" value="a"><label for="cq1a1">Water</label><br>
+            <input type="radio" id="cq1a2" name="cq1" value="b"><label for="cq1a2">Hydrogen Peroxide</label><br>
+            <input type="radio" id="cq1a3" name="cq1" value="c"><label for="cq1a3">Oxygen Gas</label><br>
+            <button onclick="submitQuiz('chemistry-quiz-1')">Submit</button>
+        </div>
+        <!-- More quizzes can be added here -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Course - Studycademy</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="mquiz.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Maths Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="quiz-section">
+        <div id="python-quiz" class="quiz">
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. Solve for x: 2x + 3 = 5</p>
+                    <input type="radio" id="q1a1" name="q1" value="a"><label for="q1a1">x = 2</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="b"><label for="q1a2">x = 1</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="c"><label for="q1a3">x = 3</label><br>
+                </div>
+                
+                <div class="quiz-question">
+                    <p>2. What is the area of a triangle with base 4 and and height 3?</p>
+                    <input type="radio" id="q2a1" name="q2" value="a"><label for="q2a1">6</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="b"><label for="q2a2">12</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="c"><label for="q2a3">9</label><br>
+                </div>
+    
+                <div class="quiz-question">
+                    <p>3. What is sin(90°)?</p>
+                    <input type="radio" id="q3a1" name="q3" value="a"><label for="q3a1">0</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="b"><label for="q3a2">1</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="c"><label for="q3a3">-1</label><br>
+                </div>
+    
+                <div class="quiz-question">
+                    <p>4. Differentiate f(x) = x^2.</p>
+                    <input type="radio" id="q4a1" name="q4" value="a"><label for="q4a1">x</label><br>
+                    <input type="radio" id="q4a2" name="q4" value="b"><label for="q4a2">2x</label><br>
+                    <input type="radio" id="q4a3" name="q4" value="c"><label for="q4a3">2</label><br>
+                </div>
+
+                <div class="quiz-question">
+                    <p>5. The solution to the equation sin x = 1/2 for 0 ≤ x < 2π is: </p>
+                    <input type="radio" id="q4a1" name="q5" value="a"><label for="q4a1">π/6, 5π/6</label><br>
+                    <input type="radio" id="q4a2" name="q5" value="b"><label for="q4a2">π/4, 3π/4</label><br>
+                    <input type="radio" id="q4a3" name="q5" value="c"><label for="q4a3">π/2, 3π/2</label><br>
+                    <input type="radio" id="q4a3" name="q5" value="d"><label for="q4a3">π/3, 2π/3</label><br>
+                </div>
+
+                <div class="quiz-question">
+                    <p>6. Find the derivative of the function f(x) = 3x² - 4x + 7. </p>
+                    <input type="radio" id="q4a1" name="q6" value="a"><label for="q4a1">6x - 4</label><br>
+                    <input type="radio" id="q4a2" name="q6" value="b"><label for="q4a2">6x + 4</label><br>
+                    <input type="radio" id="q4a3" name="q6" value="c"><label for="q4a3">3x - 4</label><br>
+                    <input type="radio" id="q4a3" name="q6" value="d"><label for="q4a3">6x + 7</label><br>
+                </div>
+
+                <div class="quiz-question">
+                    <p>7. Find the derivative of f(x) = e^{2x}.</p>
+                    <label><input type="radio" name="q7" value="a">e^{2x} </label><br>
+                    <label><input type="radio" name="q7" value="b">2e^{2x}</label><br>
+                    <label><input type="radio" name="q7" value="c">2x e^{2x}</label><br>
+                    <label><input type="radio" name="q7" value="d">x e^x</label>
+                </div>
+                
+                <div class="quiz-question">
+                    <p>8. Find ∫sin(x)dx.</p>
+                    <label><input type="radio" name="q8" value="a">−sin(x)+C</label><br>
+                    <label><input type="radio" name="q8" value="b">cos(x)+C</label><br>
+                    <label><input type="radio" name="q8" value="c">−cos(x)+C</label><br>
+                    <label><input type="radio" name="q8" value="d">sin(x)+C</label>
+                </div>
+                
+    
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+            <div id="quiz-feedback" class="hidden"></div>
+        </div>
+    </section>
+
+</body>

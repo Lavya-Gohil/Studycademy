@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Course - Studycademy</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="quiz.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Python Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="quiz-section">
+        <div id="python-quiz" class="quiz">
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. What is the correct file extension for Python files?</p>
+                    <input type="radio" id="q1a1" name="q1" value="a"><label for="q1a1">.py</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="b"><label for="q1a2">.python</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="c"><label for="q1a3">.pt</label><br>
+                </div>
+                
+                <div class="quiz-question">
+                    <p>2. Which of the following is a Python data type?</p>
+                    <input type="radio" id="q2a1" name="q2" value="a"><label for="q2a1">float</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="b"><label for="q2a2">integer</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="c"><label for="q2a3">all of the above</label><br>
+                </div>
+    
+                <div class="quiz-question">
+                    <p>3. How do you start a comment in Python?</p>
+                    <input type="radio" id="q3a1" name="q3" value="a"><label for="q3a1">#</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="b"><label for="q3a2">//</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="c"><label for="q3a3">/*</label><br>
+                </div>
+    
+                <div class="quiz-question">
+                    <p>4. What function is used to output text to the screen in Python?</p>
+                    <input type="radio" id="q4a1" name="q4" value="a"><label for="q4a1">print()</label><br>
+                    <input type="radio" id="q4a2" name="q4" value="b"><label for="q4a2">echo()</label><br>
+                    <input type="radio" id="q4a3" name="q4" value="c"><label for="q4a3">output()</label><br>
+                </div>
+    
+                <div class="quiz-question">
+                    <p>5. How do you define a function in Python?</p>
+                    <input type="radio" id="q5a1" name="q5" value="a"><label for="q5a1">def myFunction():</label><br>
+                    <input type="radio" id="q5a2" name="q5" value="b"><label for="q5a2">function myFunction()</label><br>
+                    <input type="radio" id="q5a3" name="q5" value="c"><label for="q5a3">function myFunction() {}</label><br>
+                </div>
+    
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+            <div id="quiz-feedback" class="hidden"></div>
+        </div>
+    </section>
+
+</body>
